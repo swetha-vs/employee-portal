@@ -15,10 +15,10 @@ function App() {
     <AuthProvider>
       <Routes>
         <Route path='/login' element={<AuthUser />} />
-        {/* <Route path='/' element={<ProtectedRoutes auth={auth} />} > */}
+         <Route path='/' element={<ProtectedRoutes auth={auth} />} >
           <Route path='/' element={<FormUser />} />
           <Route path='/DetailsUser/:id' element={<DetailsUser />} />
-        {/* </Route> */}
+         </Route>
       </Routes>
     </AuthProvider>
 
